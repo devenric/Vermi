@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Subir un nuevo recuerdo</h1>
+
+    <form action="" method="post" enctype="multipart/form-data"> <!--con el enctype se permite subir imagenes -->
+        <label for="imagenes">Imágenes (máx. 5):</label><br>
+        <input type="file" id="imagenes" name="imagenes[]" accept="image/*" multiple><br>
+
+        <label for="titulo">Título*:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br>
+        <label for="descripcion">Descripción:</label><br>
+        <input type="text" id="descripcion" name="descripcion"><br>
+        <label for="ubicacion">Ubicación:</label><br>
+        <input type="text" id="ubicacion" name="ubicacion"><br>
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <label for="etiquetas">Etiquetas:</label><br>
+        <input type="text" id="etiquetas" name="etiquetas" placeholder="#viaje #playa #verano"><br>
+
+        <label for="visibilidadInput">Visibilidad:</label><br>
+        <input type="text" id="visibilidadInput" name="visibilidad" list="visibilidad"><br>
+        <datalist id="visibilidad">
+            <option value="Pública">
+            <option value="Seguidores">
+            <option value="Privada">
+        </datalist>
+
+        <div id="botones">
+            <button type="button" onclick="history.back()">Cancelar</button>
+            <button type="submit" name="accion" value="borrador">Añadir a borrador</button>
+            <button type="submit" name="accion" value="publicar">Publicar</button>
+        </div>
+
+    </form>
+</body>
+</html>
