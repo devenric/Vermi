@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Editar Perfil</h1>
+
+    <div id="fotoPerfil">
+        <img src="" alt="Foto de perfil" width="150" height="150"><br>
+
+        <!-- formulario para cambiar foto -->
+        <form id="cambiarFoto" action="" method="post" enctype="multipart/form-data">
+            <button type="submit" name="accion" value="cambiar">Cambiar foto</button>
+        </form>
+
+        <!-- formulario para eliminar foto-->
+        <form id="eliminarFoto" action="" method="post">
+            <button type="submit" name="accion" value="eliminar">Eliminar foto</button>
+        </form>
+    </div>
+
+    <div id="subtitulos">
+        <h2>Nombre usuario</h2>
+        <h3>Descripción perfil</h3>
+    </div>
+
+
+    <form action="" method="post">
+        <label for="nombre">Nombre de usuario</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="nombreCompleto">Nombre completo</label><br>
+        <input type="text" id="nombreCompleto" name="nombreCompleto"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="fechaNacimiento">Fecha de nacimiento</label><br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+
+        <label for="descripcion">Descripción</label><br>
+        <textarea name="descripcion" id="descripcion">
+            Brevemente, ¿quién eres?
+        </textarea><br>
+
+        <div id="botones">
+            <button type="button" onclick="history.back()">Cancelar</button>
+            <button type="submit" name="accion" value="publicar">Aceptar</button>
+        </div>
+    </form>
+
+</body>
+</html>
