@@ -1,0 +1,51 @@
+/* ── GLOBAL ── */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* HEADER (General)*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+/* HEADER (Interno) */
+.headerIzquierdo, .headerCentral, .headerDerecho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerIzquierdo span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* HEADER (Imagenes) */
+.headerIzquierdo img,
+.headerDerecho img {
+    width: 3rem;
+}
+
+/* HEADER (central) */
+.headerCentral ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
