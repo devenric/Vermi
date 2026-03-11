@@ -11,10 +11,23 @@ header {
     align-items: center;
     background-color: white;
     position: fixed;
+    height: 60px;
     top: 0;
     left: 0;
     right: 0;
     padding: 0 20px;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* izquierda | centro | derecha */
+    gap: 16px;
+    margin-top: 60px; /* altura del header */
+    padding: 16px;
 }
 
 /* HEADER (Interno) */
