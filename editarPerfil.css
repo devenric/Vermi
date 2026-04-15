@@ -1,0 +1,193 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#contenido{
+    margin: 5% 20% 5% 20%;
+}
+
+#fotoPerfil{
+    display: flex;
+    flex-direction: row;
+}
+
+#foto{
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 200%;
+    height: 150px;
+    width: 150px;
+}
+
+#botonesFoto{
+    position: relative;
+}
+
+#cambiarFoto, #eliminarFoto{
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#cambiarFoto{
+    margin-left: 30px;
+    background-color: #5b92c6;
+}
+
+#eliminarFoto{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #c65b5b;
+}
+
+#nombres{
+    margin-left: 10px;
+    position: relative;
+}
+
+#nombres h3{
+    margin-top: 0;
+    position: absolute;
+    top: 30px;
+}
+
+#formDatos{
+    margin: 60px auto 0 230px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input{
+    height: 30px;
+} 
+
+#nombre, #usuario,#email, #fechaNacimiento{
+    width: 250px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+#botonesGuardar{
+    display: flex;
+    flex-direction: row;
+}
+
+#cancelar, #guardar{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#cancelar{
+    background-color: #c65b5b;
+}
+
+#guardar{
+    margin-left: 155px;
+    background-color: #5bc67f;
+}
+
+#eliminarFoto, #cambiarFoto, #cancelar, #guardar{
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+}
+
+#paginasFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+#paginasFooter a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 100px;
+    position: relative;
+}
+
+#logoYCopyFooter{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 100px;
+    padding-bottom: 80px;
+}
+
+#textoLogo{
+    margin-left: 25px;
+}
+
+#logoYCopyFooter img{
+    height: 100px;
+    width: 100px;
+}
+
+
+/* pseudoclases */
+
+#cambiarFoto:hover{
+    background-color: #468aca;
+}
+
+#eliminarFoto:hover{
+    background-color: #c94545;
+}
+
+#cancelar:hover{
+    background-color: #c94545;
+}
+
+#guardar:hover{
+    background-color: #45cc72;
+}
+
+#cancelar:active{
+    background-color: #cb3333;
+}
+
+#guardar:active{
+    background-color: #30d066;
+}
+
+#eliminarFoto:active{
+    background-color: #cb3333;
+}
+
+#cambiarFoto:active{
+    background-color: #2a80d0;
+}
+
+
+
+#logoYCopyFooter > p:last-child{
+    margin-left: 780px;
+}
+
+#paginasFooter a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: aliceblue;
+    transition: width 0.3s ease;
+}
+
+#paginasFooter a:hover::after {
+    width: 100%;
+}

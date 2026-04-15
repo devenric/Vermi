@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vermi</title>
+    <link rel="shortcut icon" href="logoP.png" type="image/x-icon">
+    <link rel="stylesheet" href="editarPerfil.css">
 </head>
+
 <body>
-    <h1>Editar Perfil</h1>
-
-    <div id="fotoPerfil">
-        <img src="" alt="Foto de perfil" width="150" height="150"><br>
-
-        <!-- formulario para cambiar foto -->
-        <form id="cambiarFoto" action="" method="post" enctype="multipart/form-data">
-            <button type="submit" name="accion" value="cambiar">Cambiar foto</button>
-        </form>
-
-        <!-- formulario para eliminar foto-->
-        <form id="eliminarFoto" action="" method="post">
-            <button type="submit" name="accion" value="eliminar">Eliminar foto</button>
-        </form>
-    </div>
-
-    <div id="subtitulos">
-        <h2>Nombre usuario</h2>
-        <h3>Descripción perfil</h3>
-    </div>
+    <div id="contenido">
 
 
-    <form action="" method="post">
-        <label for="nombre">Nombre de usuario</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="nombreCompleto">Nombre completo</label><br>
-        <input type="text" id="nombreCompleto" name="nombreCompleto"><br>
+        <h1>Editar Perfil</h1>
 
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="fechaNacimiento">Fecha de nacimiento</label><br>
-        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+        <div id="fotoPerfil">
+            <img id="foto" src="" alt="Foto de perfil" width="150" height="150" onerror="this.src='logoP.png';"><br>
 
-        <label for="descripcion">Descripción</label><br>
-        <textarea name="descripcion" id="descripcion">
-            Brevemente, ¿quién eres?
-        </textarea><br>
+            <div id="botonesFoto">
+                <button id="cambiarFoto" type="submit" name="accion" value="cambiar">Cambiar foto</button>
 
-        <div id="botones">
-            <button type="button" onclick="history.back()">Cancelar</button>
-            <button type="submit" name="accion" value="publicar">Aceptar</button>
+                <button id="eliminarFoto" type="submit" name="accion" value="eliminar">Eliminar foto</button>
+            </div>
         </div>
-    </form>
+
+        <div id="nombres">
+            <h2>Nombre</h2>
+            <h3>@Usuario</h3>
+        </div>
+
+        <form id="formDatos" action="" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario"><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" placeholder="¿Quién eres?"></textarea><br>
+
+            <div id="botonesGuardar">
+                <button id="cancelar" type="button" onclick="history.back()">Cancelar</button>
+                <button id="guardar" type="submit" name="accion" value="publicar">Aceptar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div id="paginasFooter">
+            <a href="">Sobre Vermi</a>
+            <a href="">Contacta con nosotros</a>
+            <a href="">Política de privacidad</a>
+        </div>
+
+        <div id="logoYCopyFooter">
+            <img src="logoP.png" alt="" srcset="">
+            <div id="textoLogo">
+                <p>VERMI</p>
+                <p>Recuerda en voz alta</p>
+            </div>
+            <p>© Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
