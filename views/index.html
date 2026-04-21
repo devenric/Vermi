@@ -8,42 +8,134 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">Vermi</h1>
-        <section>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#"></a></li> <!-- buscar -->
-                    <li><a href="#">Publicar</a></li> <!-- publicar -->
-                    <li><a href="#">Explorar</a></li> <!-- explorar -->
-                    <li><a href="#">Perfil</a></li> <!-- perfil -->
-                </ul>
-            </nav>
-        </section>
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            <h1 class="titulo">Vermi</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Publicar</a></li>
+                <li><a href="#">Amigos</a></li>
+                <li><a href="#">Mi perfil</a></li>
+                <li><a href="#">Editar perfil</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
 
-<aside class="aside">
-    <section>
-<div class="container">
-    <section>
-<div class="card">
-        <article>
-<h1>User 1</h1>
-        </article>
-        </div>
-    </section>
-    <section>
-<div class="card">
-        <article>
-<h1>User2</h1>
-        </article>
-        </div>
-    </section>
-</div>
-</aside>
+    <main class="contenedor-principal">
+        <aside class="barra-lateral">
+            <section class="seccion-aside">
+                <h3>Recuerdos rápidos</h3>
+                <div class="cuadricula-recuerdos">
+                    <div class="recuerdo-icono"></div>
+                    <div class="recuerdo-icono"></div>
+                    <div class="recuerdo-icono"></div>
+                    <div class="recuerdo-icono"></div>
+                    <div class="recuerdo-icono"></div>
+                </div>
+            </section>
+
+            <section class="seccion-aside">
+                <h3>Etiquetas populares</h3>
+                <div class="etiquetas">
+                    <span class="etiqueta">#Playa</span>
+                    <span class="etiqueta">#SanJuan</span>
+                    <span class="etiqueta">#Cumpleaños</span>
+                    <span class="etiqueta">#Fiesta</span>
+                    <span class="etiqueta">#Cine</span>
+                </div>
+            </section>
+
+            <section class="seccion-aside">
+                <h3>Sugerencias</h3>
+                
+                <div class="sugerencia-usuario">
+                    <div class="avatar-pequeno"></div>
+                    <div class="info-sugerencia">
+                        <strong>Usuario001</strong>
+                        <span>Amigo en común</span>
+                    </div>
+                    <button class="boton-mas">+</button>
+                </div>
+
+                <div class="sugerencia-usuario">
+                    <div class="avatar-pequeno"></div>
+                    <div class="info-sugerencia">
+                        <strong>Usuario002</strong>
+                        <span>Amigo en común</span>
+                    </div>
+                    <button class="boton-mas">+</button>
+                </div>
+
+                <div class="sugerencia-usuario">
+                    <div class="avatar-pequeno"></div>
+                    <div class="info-sugerencia">
+                        <strong>Usuario003</strong>
+                        <span>Amigo en común</span>
+                    </div>
+                    <button class="boton-mas">+</button>
+                </div>
+            </section>
+        </aside>
+
+        <section class="zona-publicaciones">
+            <article class="tarjeta-publicacion">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Atardecer en el mar" class="imagen-post">
+                <div class="pie-publicacion">
+                    <div class="datos-autor">
+                        <div class="avatar-pequeno"></div>
+                        <div class="info-autor">
+                            <strong>Usuario032</strong>
+                            <span>27/02/2025</span>
+                        </div>
+                        <button class="boton-seguir">Seguir</button>
+                    </div>
+                    <div class="interacciones">
+                        <span>♡ 12</span>
+                        <span>🗨️ 2</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta-publicacion">
+                <img src="https://images.unsplash.com/photo-1520116468816-95b69f847357?auto=format&fit=crop&w=800&q=80" alt="Selfie en la playa" class="imagen-post">
+                <div class="pie-publicacion">
+                    <div class="datos-autor">
+                        <div class="avatar-pequeno"></div>
+                        <div class="info-autor">
+                            <strong>Usuario017</strong>
+                            <span>20/02/2025</span>
+                        </div>
+                        <button class="boton-seguir">Seguir</button>
+                    </div>
+                    <div class="interacciones">
+                        <span>♡ 46</span>
+                        <span>🗨️ 24</span>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <div class="enlaces-pie">
+            <a href="#">Sobre Vermi</a>
+            <a href="#">Contacta con nosotros</a>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <div class="creditos-pie">
+            <div class="logo-area-pie">
+                <div class="logo-icon-pie"></div>
+                <div>
+                    <strong>VERMI</strong><br>
+                    <span>Recuerda en voz alta</span>
+                </div>
+            </div>
+            <div class="derechos">
+                © Todos los derechos reservados.
+            </div>
+        </div>
     </footer>
 </body>
 </html>
