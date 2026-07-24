@@ -1,0 +1,37 @@
+header{
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px;
+}
+h1.titulo{
+text-align: center;
+font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+font-size: 3rem;
+}
+section.box-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+div.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: #1a1a2e;
+    width: 600px;
+    
+    height: auto;
+        border-radius: 25px;
+
+}
+section.form-content{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 50%;
+}
+input.user, input.password{
+padding: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./loginRegister.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Iniciar Sesión</h1>
+    </header>
+    <main>
+        <section class="box-form">
+            <div class="form">
+                <form action="" method="POST">
+                    <section class="form-content">
+                        <label for="usuario">Usuario</label><br>
+                        <input type="text" id="usuario" class="user" placeholder="Introduce tu usuario"><br><br>
+
+                        <label for="password">Contraseña</label><br>
+                        <input type="password" id="password" class="password" placeholder="Introduce tu contraseña"><br><br>
+
+                        <!-- BACKEND: comprobar que el usuario y contraseña existen en la base de datos -->
+                        <button type="submit" onclick="validar(event)">Enviar</button>
+                    </section>
+                </form>
+                <p id="error" style="color: red; display: none;">Por favor rellena todos los campos</p>
+                <p class="registro">¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Vermi. Todos los derechos reservados
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
